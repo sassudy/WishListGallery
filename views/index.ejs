@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>2021 Wishlist</h1>
+    <hr>    
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="wish">What is Your wish for 2021?</label>
+        <input type="text" name="wish" placeholder="Enter Your wish for 2021"><br><br>
+        <label for="description">Please add picture to illustrate Your wish</label>
+        <input type="text" name="description" placeholder="insert description, e.g. image1"><br>
+        <input type="file" name="userFile">
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>

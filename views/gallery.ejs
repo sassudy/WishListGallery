@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body> <!--lazy load/kui tahta sadu pilte lisada/-->
+
+    <div class="container">
+        <div class="gallery">
+
+            <% item.forEach(function(element) { %>
+            <div class="gallery-image <%= element.imageDescription %>">
+                <img src="<%= element.image %>" alt="<%= element.imageDescription %>">
+                <p><%= element.wish %></p>
+            </div>
+        <% }) %>
+         <!--   <div class="gallery-image image2">
+                <img src="images/pic2.jpg" alt="pic 2">
+            </div>
+            <div class="gallery-image image3">
+                <img src="images/pic3.jpg" alt="pic 3">
+            </div>
+            <div class="gallery-image image4">
+                <img src="images/pic4.jpg" alt="pic 4">
+            </div> -->
+        </div>
+    </div>
+    
+</body>
+</html>
